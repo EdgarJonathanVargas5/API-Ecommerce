@@ -49,15 +49,15 @@ docker compose up -d
 
 ### 2) Configurar la conexión a la base de datos
 
-Crea un archivo `appsettings.json` en la raíz del proyecto con el siguiente contenido:
+Configurar `appsettings.json` en la raíz del proyecto con el siguiente contenido de ejemplo:
 
 ```json
 {
   "ConnectionStrings": {
-    "ConexionSql": "Server=localhost,1433;Database=ApiEcommerce;User Id=sa;Password=MyStrongPass123;TrustServerCertificate=True;"
+    "ConexionSql": "Server=localhost,1433;Database=ecommerce_db;User Id=sa;Password=TU_PASSWORD;TrustServerCertificate=True;"
   },
   "ApiSettings": {
-    "SecretKey": "EstaEsUnaClaveMuySeguraParaJWT123!"
+    "SecretKey": "TU_SECRET_KEY"
   }
 }
 ```
